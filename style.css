@@ -2,41 +2,91 @@
     margin: 0;
     
 }
-nav{
-    /* position: fixed; */
-    /* top: 0; */
-    /* left: 0; */
+nav {
+  width: 100%;
+  background-color: rgb(13, 140, 219);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+/* Main nav styling */
+nav ol {
+  margin: 0;
+  padding: 10px 20px;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+  font-size: large;
+  font-weight: bolder;
+}
+
+/* Logo and search input alignment */
+nav li:first-child {
+  flex: 1;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+nav form input {
+  width: 400px;
+  max-width: 100%;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+/* Buttons styling */
+nav button {
+  padding: 5px 10px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  nav ol {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 10px;
+    gap: 10px;
+  }
+
+  nav form input {
+    width: 90%;
+  }
+
+  nav li {
     width: 100%;
-    background-color: rgb(13, 140, 219);
+  }
+
+  nav button {
+    width: 100%;
+  }
 }
-nav ol{
-    margin: 0;
-    padding: 10px 20px;
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    align-items: center;
-    padding-left: 220px;
-    font-size: large;
-    font-weight: bolder;
-}
-nav input{
-    width: 800px;
+
+@media (max-width: 480px) {
+  nav form input {
+    width: 100%;
+  }
+
+  nav ol {
+    gap: 8px;
+  }
+
+  nav li:first-child {
+    font-size: 18px;
+  }
 }
 .carousel-item img {
   height: 400px;
   object-fit: cover;
 }
-/* .first{
-    position: relative;
-    top: 50px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    height: 300px;
-    background-image: url(https://rukminim1.flixcart.com/fk-p-flap/3240/540/image/892431a53930bab6.jpg?q=60);
-    background-size: cover;    
-} */
 .firstone{
     margin: 10px;
     padding: 20px;
@@ -106,3 +156,4 @@ footer{
   border-color: greenyellow;
   color: black;
 }
+
