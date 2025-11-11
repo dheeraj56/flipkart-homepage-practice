@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    
+}
+nav{
+    /* position: fixed; */
+    /* top: 0; */
+    /* left: 0; */
+    width: 100%;
+    background-color: rgb(13, 140, 219);
+}
+nav ol{
+    margin: 0;
+    padding: 10px 20px;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    padding-left: 220px;
+    font-size: large;
+    font-weight: bolder;
+}
+nav input{
+    width: 800px;
+}
+.carousel-item img {
+  height: 400px;
+  object-fit: cover;
+}
+/* .first{
+    position: relative;
+    top: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 300px;
+    background-image: url(https://rukminim1.flixcart.com/fk-p-flap/3240/540/image/892431a53930bab6.jpg?q=60);
+    background-size: cover;    
+} */
+.firstone{
+    margin: 10px;
+    padding: 20px;
+    height: 70px;
+    height: 70px;
+  opacity: 0;
+  animation: slideUp 1.2s ease-out forwards infinite;
+}
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    font-weight: bold;
+    font-size: large;
+  }
+}
+.products{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding-bottom:50px;
+}
+.items{
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid;
+    width: 300px;
+    border-radius: 10px;
+    
+}
+.items img{
+    height: 150px;
+    width: 150px;
+}
+footer{
+    background-color: black;
+    padding: 20px 20px;
+    color: white;
+}
+.items:hover{
+    box-shadow: 10px 10px 10px 5px wheat;
+    background-color: #0d6efd;
+    transform: scale(1.1);
+}
+.items p{
+    font-size: 15px;
+    font-weight: 600;
+}
+.items button{
+    background-color: lightskyblue;
+    border-color: rgb(40, 126, 155);
+    border-radius: 10px;
+}
+.items button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 25px rgba(255, 0, 128, 0.6);
+  background: radial-gradient(circle at center, #ff0080, #ff8c00);
+  border-color: greenyellow;
+  color: black;
+}
